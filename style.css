@@ -71,8 +71,9 @@ section > div {
     width: 60%;
 }
 
-.progress-title{
-    margin: auto 3px;
+.progress-title2{
+    margin-right: 5px;
+    margin-left: 1px;
 }
 
 .progress-container > div{

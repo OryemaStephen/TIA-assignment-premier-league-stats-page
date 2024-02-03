@@ -9,26 +9,33 @@ function getEle() {
 
     
     for (let i = 0; i < length; i++) {
-        let t1 = Number(title1[i].textContent);
-        let t2 = Number(title2[i].textContent);
+        let t1 = String(title1[i].textContent).trim();
+        let t2 = String(title2[i].textContent).trim();
 
         let isPercentage1 = title1[i].textContent.includes('%');
         let isPercentage2 = title2[i].textContent.includes('%');
 
-        let total = t1 + t2;
-
+        
         if(isPercentage1){
-            progress1[i].style.width =(100-t1) + "%";
+            t1 = t1.replace('%', '');
+            progress1[i].style.width =100 - Number(t1) +"%" ;
         } else{
+            t1 = parseFloat(t1);
+            t2 = parseFloat(t2);
+            let total =  t1+ t2;
             let width1 = ((t1 / total) * 100).toFixed(2);
             progress1[i].style.width =(100-width1)+ "%";
         }
 
         if(isPercentage2){
-            progress2[i].style.width =t2 + '%';
+            t2 = t2.replace('%', '');
+            progress2[i].style.width =Number(t2) + "%";
         } else{
+            t1 = parseFloat(t1);
+            t2 = parseFloat(t2);
+            let total =  t1+ t2;
             let width2 = ((t2 / total) * 100).toFixed(2);
-            progress2[i].style.width =width2 + "%";
+            progress1[i].style.width =(100-width2)+ "%";
         }
     }
 }
