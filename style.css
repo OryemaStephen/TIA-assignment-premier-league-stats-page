@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+}
+
+main {
+    width: 80%;
+    background-color: #353434;
+    margin:20px auto;
+    padding-bottom: 30px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    height: fit-content;
+}
+
+header > div {
+    margin: 10px;
+}
+
+header > h1 {
+    text-transform: uppercase;
+    text-align: center;
+    align-self: center;
+    font-size: 16px;
+}
+
+img {
+    width: 50px;
+    height: 60px;
+}
+
+section{
+    width: 70%;
+    margin: 20px auto 10px auto;
+}
+
+section > div {
+    width: 100%;
+}
+
+.progress-title-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #353434;
+    position: relative;
+}
+
+.progress-container{
+    margin: 2px auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.progress-title-container >h6 {
+    width: 60%;
+}
+
+.progress-title{
+    margin: auto 3px;
+}
+
+.progress-container > div{
+    width: 50%;
+    background-color: #000;
+    height: 8px;
+    margin: auto 2px;
+}
+
+#progress1-container{
+    background-color: #fff;
+}
+.progress1 {
+    width: 24%;
+    height: 100%;
+    background-color: #000;
+    text-align: right;
+    line-height: 30px; 
+}
+
+.progress2 {
+    margin: auto 1px;
+    width: 17%;
+    height: 100%;
+    background-color: #fff;
+    /* color: #fff; */
+    text-align: left;
+    line-height: 30px;
+}
+
+@media screen and (max-width: 600px){
+    main{
+        width: 95%;
+        margin: 20px auto;
+    }
+}
