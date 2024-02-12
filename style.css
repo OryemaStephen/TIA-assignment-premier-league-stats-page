@@ -84,7 +84,7 @@ section > div {
 }
 
 #progress1-container{
-    background-color: #fff;
+    background-color:#fff;
 }
 .progress1 {
     width: 24%;
@@ -95,7 +95,7 @@ section > div {
 }
 
 .progress2 {
-    margin: auto 1px;
+    margin: auto 0;
     width: 17%;
     height: 100%;
     background-color: #fff;
